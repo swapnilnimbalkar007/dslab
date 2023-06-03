@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+df=pd.read_csv('iris.csv')
+df.dtypes
+df.hist(figsize=(8,6))
+plt.tight_layout()
+sns.boxplot(data=df)
+plt.xlabel('feature')
+plt.ylabel('values')
+plt.title('feature distribution')

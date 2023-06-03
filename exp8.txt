@@ -1,0 +1,8 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+df = pd.read_csv("titanic_data.csv")
+plt.hist(df['Fare'])
+plt.xlabel('ticket price')
+plt.ylabel('count')
+plt.title('Distribution of ticket price')

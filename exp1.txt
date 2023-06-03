@@ -1,0 +1,13 @@
+import pandas as pd
+df = pd.read_csv("Heart.csv")
+df.head(5)
+df.tail(5)
+df.info()
+df.describe()
+df.isnull()
+df.isnull().sum()
+df.notnull()
+df.notnull().sum()
+df.shape
+df.dtypes
+df.iloc[0:4].astype(str)

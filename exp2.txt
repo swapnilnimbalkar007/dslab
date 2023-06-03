@@ -1,0 +1,11 @@
+import pandas as pd
+import seaborn as sns
+df=pd.read_csv("student.csv")
+df.isnull()
+df.isnull().sum()
+df.describe()
+df.head()
+df.tail()
+df.info()
+df.columns
+sns.boxplot(df['First year:   Sem 2'])

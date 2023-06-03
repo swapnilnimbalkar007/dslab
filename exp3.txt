@@ -1,0 +1,21 @@
+import pandas as pd
+import seaborn as sns
+df = pd.read_csv("iris.csv")
+df.head()
+df.tail()
+df.isnull()
+df.isnull().sum()
+df.mean()
+df['Id'].mean()
+df['PetalWidthCm'].mean()
+df.mode()
+df['Id'].mode()
+df.median()
+df['Id'].median()
+df.std()
+setosa = df['Species'] == 'Iris-setosa'
+df[setosa].describe()
+setosa = df['Species'] == 'Iris-versicolor'
+print(df[setosa].describe())
+setosa = df['Species'] == 'Iris-verginica'
+print(df[setosa].describe())
